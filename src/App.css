@@ -1,0 +1,79 @@
+:root {
+    --cotton-candy: #ffb2e6ff;
+    --heliotrope: #d972ffff;
+    --purple-x-11: #8447ffff;
+    --aquamarine: #8cffdaff;
+    --beige: #ffffe8ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bannerimage {
+    background-color: purple;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    height: 100vh;
+    background-color: var(--beige);
+    color: var(--beige);
+}
+
+.mainContainer {
+    border-radius: 5px;
+    padding: 1.25rem;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--purple-x-11);
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.boxLinkHolder {
+    display: grid;
+    grid-template-columns:  repeat(3, minmax(0, 1fr));
+    gap: 25px
+}
+
+.box {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: "5px";
+    padding: "25px";
+    display: "flex";
+    align-content: "center";
+    justify-content: "center";
+    text-align: "center";
+    background-color: var(--aquamarine);
+    color: var(--heliotrope);
+    letter-spacing: "0.15rem";
+  }
+
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
