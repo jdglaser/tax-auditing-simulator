@@ -16,9 +16,9 @@ export default function BoxLinkView(props: BoxLinkViewProps) {
 
     return (
         <div className="box" style={style}>
-            <div style={{height: "100%", display: "flex", alignItems: "center"}}>
+            <div>
                 <div>
-                    <a href={link} style={{fontSize: "0.85rem"}}>{title}</a>
+                    <a href={link}>{title}</a>
                 </div>
             </div>
         </div>
